@@ -1,0 +1,21 @@
+# Doc Cleanup Session — Activity Log
+
+- **assets/eng/notes/akm_selectel_ifrs_summary.md** — Rebuilt the note with a proper heading, “Scrape context,” structured IFRS/RAS highlights, and source reference so the DR3 value model has a clean data cite.
+- **assets/eng/notes/azure_ai_foundry_future_agents_summary.md** — Trimmed Microsoft blog scrape noise, added contextual summary of Emotional Support Goose/Penultimate Penguin, and captured platform lessons + sources.
+- **assets/eng/notes/mts_marketplace_news_summary.md** — Removed site navigation junk and rewrote the note as a concise overview of the SMB marketplace launch with implications for our marketplace plans.
+- **assets/eng/notes/theverge_github_agent_hq_summary.md** — Converted the raw The Verge article dump into a structured brief covering Agent HQ strategy, competitive pressure, and takeaways for Console Copilot.
+- **assets/eng/notes/wiki_data_localization_russia.md** — Replaced the placeholder line with a localized compliance summary, detailing core requirements, penalties, and guidance for marketplace guardrails.
+- **assets/eng/notes/wiki_selectel_summary.md** — Summarized the Wikipedia/iKS facts into bullets covering profile, share, history, products, awards, and reputation, with a proper sources section.
+- **assets/eng/notes/tadviser_selectel_highlights.md** — Rewrote the TAdviser scrape into finance, investment, and corporate move sections plus implications for the pitch and source attribution.
+- **assets/eng/sources/dr1/20251104_openai_agentkit_techcrunch.md** — Rebuilt the TechCrunch scrape into a clean note with Scrape context, Dev Day summary, AgentKit capability breakdown, and implications for Infra App so the file no longer carries nav menus or share widgets.
+- **assets/eng/sources/dr1/20251104_azure_foundry_mcp_infoq.md** — Stripped the InfoQ newsletter clutter and kept the MCP-specific reporting (overview, benefits, competitive context) plus a Scrape context block for reference.
+- **assets/rus/sources/dr1/20251104_openai_agentkit_techcrunch.md** — Перевёл статью на структурированный RU конспект с Scrape context, сохранил ключевые блоки (Builder/ChatKit/Evals/коннекторы) и убрал TechCrunch-навигацию.
+- **assets/rus/sources/dr1/20251104_azure_foundry_mcp_infoq.md** — Сжал InfoQ-материал до русскоязычного резюме с описанием MCP, выгод и рыночного контекста, без рекламных баннеров и виджетов.
+- **assets/eng/sources/dr1/20251104_aws_bedrock_guardrails.md** / **assets/rus/sources/dr1/20251104_aws_bedrock_guardrails.md** — Сверстал краткие конспекты AWS Automated Reasoning (ENG+RU) с блоком Scrape context, описанием возможностей, шагов внедрения и кейсов вместо многостраничного AWS-шаблона.
+- **assets/eng/sources/dr1/20251104_anthropic_mcp.md** / **assets/rus/sources/dr1/20251104_anthropic_mcp.md** — Сжал анонс Anthropic MCP до основных фактов (компоненты, ранние партнёры, как стартовать) и удалил исходный HTML-хвост.
+- **assets/eng/sources/dr1/20251104_asiatech_shisa.md** / **assets/rus/sources/dr1/20251104_asiatech_shisa.md** — Переписал историю Shisa.ai в структурированный обзор (продукт, модель, трекшн) для обеих локалей.
+- **assets/eng/sources/dr1/20251104_cnbctv18_korea_budget_ai.md** / **assets/rus/sources/dr1/20251104_cnbctv18_korea_budget_ai.md** — Заменил страницу CNBC на краткий бриф по бюджету РК (цифры, сделка с Nvidia, политконтекст) с Scrape context EN/RU.
+- **assets/eng/sources/dr1/20251104_eweek_meta_ai_spending.md** / **assets/rus/sources/dr1/20251104_eweek_meta_ai_spending.md** — Описал рост капекс Meta и реакцию рынка, убрав навигацию eWEEK.
+- **assets/eng/sources/dr1/20251104_forethought_case_study.md** / **assets/rus/sources/dr1/20251104_forethought_case_study.md** — Вытянул из AWS кейса ключевые цифры (66% и 80% экономии, MME + serverless) и оформил удобное резюме для ENG/RU.
+- **assets/eng/sources/dr1/20251104_github_agent_hq_infoworld.md** / **assets/rus/sources/dr1/20251104_github_agent_hq_infoworld.md** — Сжал материал InfoWorld в основные пункты (миссион-контроль, кастомные агенты, позиция IDC) и очистил от рекламных блоков.
+- **assets/eng/sources/dr1/20251104_thetech_almaty.md** / **assets/rus/sources/dr1/20251104_thetech_almaty.md** — Пересобрал профиль Soile AI в структурированную заметку (история, продукт, трекшн, планы) для обеих локалей.

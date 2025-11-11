@@ -1,0 +1,48 @@
+name: infra
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  infra_pitch_deck:
+    path: packages/infra_pitch_deck
+  collection: ^1.18.0
+  go_router: ^16.2.1
+  flutter_markdown: ^0.7.3+1
+  provider: ^6.1.2
+  share_plus: ^10.0.0
+  intl: ^0.20.2
+  url_launcher: ^6.3.0
+  markdown: ^7.3.0
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+  meta: ^1.16.0
+  file_saver: ^0.2.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  archive: ^3.4.10
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/eng/reports/
+    - assets/eng/notes/
+    - assets/eng/sources/dr1/
+    - assets/eng/sources/dr2/
+    - assets/rus/reports/
+    - assets/rus/notes/
+    - assets/rus/sources/dr1/
+    - assets/rus/sources/dr2/
+    - assets/meta/
+    - assets/bundles/
