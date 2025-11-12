@@ -25,6 +25,12 @@ class ResearchNavConfig {
 
 final researchNavItems = [
   ResearchNavConfig(
+    route: '/profile',
+    icon: Icons.person_outline,
+    selectedIcon: Icons.person,
+    labelBuilder: (l10n) => l10n.navProfile,
+  ),
+  ResearchNavConfig(
     route: '/dr1',
     icon: Icons.hub_outlined,
     selectedIcon: Icons.hub,
@@ -51,12 +57,6 @@ final researchNavItems = [
     selectedIcon: Icons.trending_up,
     labelBuilder: (l10n) => l10n.navDr3,
     reportId: 'dr3_value_pricing_full',
-  ),
-  ResearchNavConfig(
-    route: '/profile',
-    icon: Icons.person_outline,
-    selectedIcon: Icons.person,
-    labelBuilder: (l10n) => l10n.navProfile,
   ),
 ];
 
