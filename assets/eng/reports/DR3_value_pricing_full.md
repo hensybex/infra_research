@@ -1,4 +1,4 @@
-# Research Paper 4 — Full Value, Pricing & ROI Report
+# Value Engine — Full Value, Pricing & ROI Report
 
 ## Executive Summary
 - Base retainer: **₽36M/year** (four tranches × ₽9M) aligned with Ignite → Foundation → Pilot Scale → Expansion ({{doc:roadmap_draft|Flagship Roadmap Draft}}, {{doc:dr3_value_pricing|DR3 Value, Pricing & ROI Model}}).

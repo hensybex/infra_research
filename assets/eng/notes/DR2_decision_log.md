@@ -1,4 +1,4 @@
-# Research Paper 2 Decision Log
+# Launch Blueprint Decision Log
 
 ## Selection Rationale
 1. **Console Copilot as anchor** – Global benchmarks (GitHub Agent HQ, Azure AI Foundry) show developers expect multi-agent orchestration embedded in the console, making it the fastest path to operational lift and differentiation for a lean core team [A2][A3].

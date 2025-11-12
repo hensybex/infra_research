@@ -184,7 +184,7 @@ class _BudgetSummaryCard extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           Text(
-            'Ориентировочный годовой бюджет запуска AI-платформы под ключ: 24–36 млн ₽.',
+            'Ориентировочный годовой бюджет запуска AI-платформы под ключ: 32–36 млн ₽.',
             style: theme.textTheme.titleLarge?.copyWith(
               fontWeight: FontWeight.w700,
               color: NeoColors.accent,

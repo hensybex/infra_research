@@ -22,10 +22,11 @@ class NavigationShell extends StatelessWidget {
           ),
         )
         .toList();
-    final currentLabel = configs[shell.currentIndex].labelBuilder(l10n);
+    final currentConfig = configs[shell.currentIndex];
+    final currentLabel = currentConfig.labelBuilder(l10n);
     return Scaffold(
       appBar: AppBar(
-        title: Text(currentLabel),
+        title: currentConfig.isProfile ? Text(currentLabel) : null,
         actions: const [
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 8),

@@ -1,4 +1,4 @@
-# Research Paper 2.5 — Cross-Border Marketplace Access (Full Report)
+# Market Bridge — Cross-Border Marketplace Access (Full Report)
 
 ## Executive Summary
 - Russian personal-data law 152-FZ allows cross-border inference only under strict rules: RU citizen data must be stored in-country (Art.18(5)), outbound transfer requires Roskomnadzor notification + “adequacy” assessment (Art.12), and anonymized data fall outside the regime (Art.3). Details documented in {{doc:dr2_5_market_access|DR2.5 — Cross-Border Marketplace Access}} and {{doc:dr2_5_compliance_checklist|DR2.5 — Cross-Border Checklist}}.

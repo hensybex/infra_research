@@ -40,6 +40,7 @@ ReportDocument _parseReportDocument(_ReportParserJob job) {
   final sections = _extractSections(lines);
   final sources = _extractSources(lines, slug);
   final cleanedBody = _removeSourcesSection(lines);
+  final body = _removePrimaryHeading(cleanedBody);
   final tags = _inferTags(code);
   final wordCount = _estimateWords(job.body);
 
@@ -50,7 +51,7 @@ ReportDocument _parseReportDocument(_ReportParserJob job) {
     path: job.path,
     languageCode: language,
     sections: sections,
-    body: cleanedBody,
+    body: body,
     wordCount: wordCount,
     tags: tags,
     summary: summary,
@@ -181,6 +182,29 @@ String _removeSourcesSection(List<String> lines) {
     index++;
   }
   return buffer.join('\n').trim();
+}
+
+String _removePrimaryHeading(String body) {
+  final lines = body.split('\n');
+  var removedHeading = false;
+  var removedSpacer = false;
+  final buffer = <String>[];
+  for (final line in lines) {
+    if (!removedHeading && line.trimLeft().startsWith('# ')) {
+      removedHeading = true;
+      continue;
+    }
+    if (removedHeading && !removedSpacer) {
+      if (line.trim().isEmpty) {
+        removedSpacer = true;
+        continue;
+      }
+      removedSpacer = true;
+    }
+    buffer.add(line);
+  }
+  final cleaned = buffer.join('\n');
+  return removedHeading ? cleaned.trimLeft() : body;
 }
 
 bool _isNoteReference(String text) =>

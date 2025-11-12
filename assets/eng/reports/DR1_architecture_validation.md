@@ -1,4 +1,4 @@
-# Research Paper 1 — Proof Points for Multi-Orchestrator Engineering Stack
+# Stack Proof — Proof Points for Multi-Orchestrator Engineering Stack
 
 ## 1. Executive Bulletproof (client-facing)
 - OpenAI positions AgentKit as the frictionless path from prototype to production, with Connector Registry governance baked in (Sam Altman, DevDay 2025) → {{doc:20251104_openai_agentkit_techcrunch|OpenAI AgentKit · TechCrunch}}.

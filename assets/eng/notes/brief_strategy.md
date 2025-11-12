@@ -1,4 +1,4 @@
-# Research Paper 2 Solution Pathing – Brief & Strategy
+# Launch Blueprint – Solution Pathing Brief & Strategy
 
 ## Objective
 Design a solution portfolio and roadmap for a Russian infrastructure provider (TimeWeb/Selectel-like) to justify engaging a compact engineer + product AI team.

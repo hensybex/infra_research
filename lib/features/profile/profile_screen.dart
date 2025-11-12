@@ -309,6 +309,10 @@ class _LetterTile extends StatelessWidget {
     final chipLabel = letter.isAvailable
         ? l10n.profileLettersStatusLive
         : l10n.profileLettersStatusPending;
+    final formatLabel = _formatLabel();
+    final bool actionEnabled = letter.isAvailable;
+    final actionLabel = _actionLabel();
+    final actionIcon = _actionIcon();
 
     final pendingBackground = theme.colorScheme.surfaceContainerHighest;
     final pendingForeground = theme.colorScheme.onSurface;
@@ -368,19 +372,128 @@ class _LetterTile extends StatelessWidget {
             ),
           ),
         ],
+        if (formatLabel != null) ...[
+          const SizedBox(height: 12),
+          Wrap(
+            spacing: 8,
+            children: [
+              Chip(
+                label: Text(formatLabel),
+                avatar: Icon(
+                  letter.isTextAsset
+                      ? Icons.article_outlined
+                      : letter.isFileAsset
+                      ? Icons.download_outlined
+                      : Icons.link_outlined,
+                  size: 16,
+                ),
+              ),
+            ],
+          ),
+        ],
         const SizedBox(height: 12),
         OutlinedButton.icon(
-          onPressed: letter.isAvailable
-              ? () => ProfileScreen._launchUrl(letter.url!)
-              : null,
-          icon: const Icon(Icons.description_outlined),
+          onPressed: actionEnabled ? () => _handleLetterTap(context) : null,
+          icon: Icon(actionIcon),
           label: Text(
-            letter.isAvailable
-                ? l10n.profileLettersOpenCta
-                : l10n.profileLettersPendingLabel,
+            actionEnabled ? actionLabel : l10n.profileLettersPendingLabel,
           ),
         ),
       ],
     );
+  }
+
+  String? _formatLabel() {
+    if (letter.hasAsset) {
+      final ext = letter.assetExtension?.toUpperCase();
+      if (ext != null && ext.isNotEmpty) {
+        return ext;
+      }
+      return 'FILE';
+    }
+    if (letter.url != null) {
+      return 'URL';
+    }
+    return null;
+  }
+
+  String _actionLabel() {
+    if (letter.isTextAsset) {
+      return l10n.profileLettersReadCta;
+    }
+    if (letter.isFileAsset) {
+      return l10n.profileLettersDownloadCta;
+    }
+    return l10n.profileLettersOpenCta;
+  }
+
+  IconData _actionIcon() {
+    if (letter.isTextAsset) {
+      return Icons.visibility_outlined;
+    }
+    if (letter.isFileAsset) {
+      return Icons.download_outlined;
+    }
+    return Icons.description_outlined;
+  }
+
+  Future<void> _handleLetterTap(BuildContext context) async {
+    final messenger = ScaffoldMessenger.of(context);
+    try {
+      if (letter.hasAsset) {
+        if (letter.isTextAsset) {
+          final content = await rootBundle.loadString(letter.assetPath!);
+          if (!context.mounted) return;
+          await showDialog<void>(
+            context: context,
+            builder: (dialogContext) => AlertDialog(
+              title: Text(letter.partner),
+              content: SizedBox(
+                width: 520,
+                child: SingleChildScrollView(child: SelectableText(content)),
+              ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.of(dialogContext).pop(),
+                  child: Text(
+                    MaterialLocalizations.of(dialogContext).closeButtonLabel,
+                  ),
+                ),
+              ],
+            ),
+          );
+          return;
+        }
+        final data = await rootBundle.load(letter.assetPath!);
+        final ext = letter.assetExtension ?? 'docx';
+        final name = _baseFileName();
+        await FileSaver.instance.saveFile(
+          name: name,
+          bytes: data.buffer.asUint8List(),
+          ext: ext,
+          mimeType: MimeType.other,
+        );
+        messenger.showSnackBar(
+          SnackBar(content: Text(l10n.profileLettersDownloadSuccess)),
+        );
+        return;
+      }
+      if (letter.url != null) {
+        await ProfileScreen._launchUrl(letter.url!);
+        return;
+      }
+    } catch (_) {
+      messenger.showSnackBar(
+        SnackBar(content: Text(l10n.profileLettersDownloadError)),
+      );
+    }
+  }
+
+  String _baseFileName() {
+    final fileName = letter.assetFileName;
+    if (fileName == null) return letter.id;
+    final dotIndex = fileName.lastIndexOf('.');
+    if (dotIndex == -1) return fileName;
+    return fileName.substring(0, dotIndex);
   }
 }

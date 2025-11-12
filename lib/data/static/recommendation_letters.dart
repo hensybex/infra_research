@@ -23,7 +23,11 @@ const List<RecommendationLetter> recommendationLetters = [
       'ru':
           'Фаундер фиксирует, что AI-ритуалы, paywall и аналитика удержания вышли менее чем за 2 месяца, а дуэт встроился в продуктовую операционку.',
     },
-    url: 'https://docs.google.com/document/d/SOULWI_LETTER_ID',
+    assetPath: 'assets/recomendation_letters/soulwi.txt',
+    note: {
+      'en': 'Plain-text note opens inline — no external apps required.',
+      'ru': 'Текстовое письмо открывается прямо в приложении.',
+    },
   ),
   RecommendationLetter(
     id: 'letter_philologists',
@@ -35,11 +39,11 @@ const List<RecommendationLetter> recommendationLetters = [
       'ru':
           'Продукт-лид подтверждает, что лаборатория транскрибации на Serverpod + Flutter вышла из прототипа в пилоты с инфраструктурой и eval-петлями дуэта.',
     },
+    assetPath: 'assets/recomendation_letters/philologists.docx',
     note: {
       'en':
-          'Signed Google Doc lands tonight; PDF export will be dropped in the pack.',
-      'ru': 'Подписанный Google Doc прилетит вечером; PDF добавим в пакет.',
+          'DOCX exports locally so it can be shared or co-signed straight from the deck.',
+      'ru': 'DOCX сохраняется локально — можно сразу делиться или подписывать.',
     },
-    status: RecommendationLetterStatus.incoming,
   ),
 ];

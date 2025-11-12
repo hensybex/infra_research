@@ -44,6 +44,12 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Local presentation bundles
+infra_pitch_presentation_mac/
+infra_pitch_presentation_mac.zip
+infra_pitch_presentation_win.zip
+portfolio.zip
+
 # Local transfer bundles
 infra_project.zip
 infra_pitch_project.zip

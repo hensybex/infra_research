@@ -182,7 +182,7 @@ String _basename(String path) {
 const List<ResearchPaperSpec> _papers = [
   ResearchPaperSpec(
     id: 'paper1_architecture_validation',
-    title: 'Research Paper 1 · Architecture Validation',
+    title: 'Stack Proof · Architecture Validation',
     englishFiles: [
       'assets/eng/reports/DR1_architecture_validation.md',
       'assets/eng/reports/DR1_architecture_validation_full.md',
@@ -194,7 +194,7 @@ const List<ResearchPaperSpec> _papers = [
   ),
   ResearchPaperSpec(
     id: 'paper2_solution_pathing',
-    title: 'Research Paper 2 · Solution Pathing',
+    title: 'Launch Blueprint · Solution Pathing',
     englishFiles: [
       'assets/eng/reports/DR2_solution_pathing.md',
       'assets/eng/reports/DR2_solution_pathing_full.md',
@@ -206,7 +206,7 @@ const List<ResearchPaperSpec> _papers = [
   ),
   ResearchPaperSpec(
     id: 'paper3_market_access',
-    title: 'Research Paper 3 · Market Access',
+    title: 'Market Bridge · Marketplace Access',
     englishFiles: [
       'assets/eng/reports/DR2_5_market_access.md',
       'assets/eng/reports/DR2_5_market_access_full.md',
@@ -218,7 +218,7 @@ const List<ResearchPaperSpec> _papers = [
   ),
   ResearchPaperSpec(
     id: 'paper4_value_pricing',
-    title: 'Research Paper 4 · Value & Pricing',
+    title: 'Value Engine · Value & Pricing',
     englishFiles: [
       'assets/eng/reports/DR3_value_pricing.md',
       'assets/eng/reports/DR3_value_pricing_full.md',

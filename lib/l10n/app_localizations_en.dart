@@ -18,16 +18,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get languageEn => 'English';
 
   @override
-  String get navDr1 => 'Research Paper 1';
+  String get navDr1 => 'Stack Proof';
 
   @override
-  String get navDr2 => 'Research Paper 2';
+  String get navDr2 => 'Launch Blueprint';
 
   @override
-  String get navDr25 => 'Research Paper 3';
+  String get navDr25 => 'Market Bridge';
 
   @override
-  String get navDr3 => 'Research Paper 4';
+  String get navDr3 => 'Value Engine';
 
   @override
   String get navProfile => 'Profile';
@@ -57,8 +57,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileLeadershipHeading => 'Leadership duo';
 
   @override
-  String get profileLeadershipIntro =>
-      'Founder-grade CEO/CTO paired with a product partner covering discovery to signature.';
+  String get profileLeadershipIntro => 'Founder-grade CEO/CTO paired with a product partner covering discovery to signature.';
 
   @override
   String get profileTimLabel => 'Tim (CEO & CTO)';
@@ -85,8 +84,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profilePitchHeading => 'Research pack';
 
   @override
-  String get profilePitchBody =>
-      'Offline ZIP with Research Papers 1–4, bilingual notes, and slots for forthcoming recommendation letters.';
+  String get profilePitchBody => 'Offline ZIP with Research Papers 1–4, bilingual notes, and bundled recommendation letters ready to forward.';
 
   @override
   String get profilePitchDownload => 'Download pack';
@@ -104,11 +102,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileLettersHeading => 'Recommendation letters';
 
   @override
-  String get profileLettersBody =>
-      'On-demand Google Docs with due-diligence quotes. PDFs land inside the research pack when exported.';
+  String get profileLettersBody => 'Letters sit below: TXT opens inline, DOCX saves locally so it can be co-signed without leaving the app.';
 
   @override
   String get profileLettersOpenCta => 'Open letter';
+
+  @override
+  String get profileLettersReadCta => 'Read letter';
+
+  @override
+  String get profileLettersDownloadCta => 'Save letter';
 
   @override
   String get profileLettersPendingLabel => 'Letter planned';
@@ -118,6 +121,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profileLettersStatusPending => 'Incoming';
+
+  @override
+  String get profileLettersDownloadSuccess => 'Letter saved locally.';
+
+  @override
+  String get profileLettersDownloadError => 'Couldn\'t load the letter. Try again.';
 
   @override
   String get detailShare => 'Share';
@@ -171,8 +180,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get presentationCardTitle => 'Launch presentation';
 
   @override
-  String get presentationCardBody =>
-      'Open the offline deck directly in the app. Works without network access.';
+  String get presentationCardBody => 'Show the presentation with the core research storyline.';
 
   @override
   String get presentationLaunchCta => 'Launch deck';

@@ -18,16 +18,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get languageEn => 'Английский';
 
   @override
-  String get navDr1 => 'Исследование 1';
+  String get navDr1 => 'Пруф стека';
 
   @override
-  String get navDr2 => 'Исследование 2';
+  String get navDr2 => 'Блюпринт запуска';
 
   @override
-  String get navDr25 => 'Исследование 3';
+  String get navDr25 => 'Маркет-мост';
 
   @override
-  String get navDr3 => 'Исследование 4';
+  String get navDr3 => 'Модель ценности';
 
   @override
   String get navProfile => 'Профиль';
@@ -57,8 +57,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profileLeadershipHeading => 'Дуэт лидеров';
 
   @override
-  String get profileLeadershipIntro =>
-      'Фаундерский CEO/CTO плюс продукт-партнёр ведут сделку от discovery до подписи.';
+  String get profileLeadershipIntro => 'Фаундерский CEO/CTO плюс продукт-партнёр ведут сделку от discovery до подписи.';
 
   @override
   String get profileTimLabel => 'Тим (CEO & CTO)';
@@ -85,8 +84,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profilePitchHeading => 'Ресёрч-пакет';
 
   @override
-  String get profilePitchBody =>
-      'Оффлайн ZIP с Исследованиями 1–4, двуязычными заметками и местом для рекомендательных писем.';
+  String get profilePitchBody => 'Оффлайн ZIP с Исследованиями 1–4, двуязычными заметками и готовыми рекомендательными письмами.';
 
   @override
   String get profilePitchDownload => 'Скачать пакет';
@@ -98,18 +96,22 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profilePitchSaveSuccess => 'Ресёрч-пакет сохранён локально.';
 
   @override
-  String get profilePitchSaveError =>
-      'Не удалось сохранить пакет. Повторите попытку.';
+  String get profilePitchSaveError => 'Не удалось сохранить пакет. Повторите попытку.';
 
   @override
   String get profileLettersHeading => 'Рекомендательные письма';
 
   @override
-  String get profileLettersBody =>
-      'Живые Google Docs с цитатами due diligence. При экспорте PDF попадут внутрь ресёрч-пакета.';
+  String get profileLettersBody => 'Письма ниже: TXT открывается прямо в приложении, DOCX сохраняется локально для подписи.';
 
   @override
   String get profileLettersOpenCta => 'Открыть письмо';
+
+  @override
+  String get profileLettersReadCta => 'Прочитать письмо';
+
+  @override
+  String get profileLettersDownloadCta => 'Сохранить письмо';
 
   @override
   String get profileLettersPendingLabel => 'Письмо в пути';
@@ -119,6 +121,12 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get profileLettersStatusPending => 'Ожидается';
+
+  @override
+  String get profileLettersDownloadSuccess => 'Письмо сохранено локально.';
+
+  @override
+  String get profileLettersDownloadError => 'Не удалось открыть письмо. Попробуйте ещё раз.';
 
   @override
   String get detailShare => 'Поделиться';
@@ -172,11 +180,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get presentationCardTitle => 'Запустить презентацию';
 
   @override
-  String get presentationCardBody =>
-      'Показать оффлайн-деку прямо в приложении. Работает без интернета.';
+  String get presentationCardBody => 'Показать презентацию с ключевыми материалами исследования.';
 
   @override
-  String get presentationLaunchCta => 'Запустить деку';
+  String get presentationLaunchCta => 'Запустить презентацию';
 
   @override
   String get presentationTitle => 'Infra Deck';
@@ -185,5 +192,5 @@ class AppLocalizationsRu extends AppLocalizations {
   String get presentationLoadError => 'Файл презентации отсутствует в сборке.';
 
   @override
-  String get presentationCloseCta => 'Закрыть деку';
+  String get presentationCloseCta => 'Закрыть презентацию';
 }

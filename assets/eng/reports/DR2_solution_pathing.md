@@ -1,4 +1,4 @@
-# Research Paper 2 Solution Pathing & Portfolio Blueprint
+# Launch Blueprint — Solution Pathing & Portfolio Blueprint
 
 ## 1. Executive Overview
 - **Why now**: Russian infrastructure players are racing to prove sovereign AI capabilities while maintaining residency and compliance obligations; Selectel’s 46% YoY revenue growth and planned RUB 10B AI investment underscore the market urgency [A4][A5].
@@ -70,4 +70,3 @@ The catalog doubles as a prioritization matrix: it clarifies which APIs (monitor
   - [A5] Selectel strategic highlights (TAdviser) — {{doc:tadviser_selectel_highlights|tadviser_selectel_highlights}}.
   - [A6] Selectel company profile (Wikipedia) — {{doc:wiki_selectel_summary|wiki_selectel_summary}}.
   - [A7] Russia data localization requirement summary (Wikipedia) — {{doc:wiki_data_localization_russia|wiki_data_localization_russia}}.
-
