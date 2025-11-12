@@ -13,7 +13,7 @@ class AppRouter {
   AppRouter();
 
   final GoRouter router = GoRouter(
-    initialLocation: '/dr1',
+    initialLocation: '/profile',
     routes: [
       StatefulShellRoute.indexedStack(
         builder: (context, state, navigationShell) =>
