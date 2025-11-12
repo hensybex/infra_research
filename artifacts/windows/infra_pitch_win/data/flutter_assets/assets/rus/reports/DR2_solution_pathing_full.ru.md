@@ -1,4 +1,4 @@
-# Исследование 2 — Полноформатная карта решений и маршрутов поставки
+# Блюпринт запуска — Полноформатная карта решений и маршрутов поставки
 
 ## Резюме
 - Портфель из 30 приоритизированных решений сгруппирован в четыре кластера (Operations Nerve Center, Marketplace Growth, Compliance & Trust, Ecosystem Intelligence) и выстроен в фазовую программу Ignite → Foundation → Pilot Scale → Expansion (см. {{doc:discovery_catalog_table_referenced|discovery_catalog_table_referenced.ru}}, {{doc:roadmap_draft|Черновик флагманской дорожной карты}}).

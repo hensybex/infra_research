@@ -1,4 +1,4 @@
-# Research Paper 1 — Full Architecture Validation of the Multi-Orchestrator Stack
+# Stack Proof — Full Architecture Validation of the Multi-Orchestrator Stack
 
 ## Executive Summary
 - The MCP-based multi-orchestrator with Connector Registry + Evaluations is now an industry default (OpenAI AgentKit, Azure AI Foundry, GitHub Agent HQ) **and** mirrors what Russian infrastructure providers expect ({{doc:dr1_architecture_validation|DR1 — Proof Points for Multi-Orchestrator Engineering Stack}}, {{doc:macro_landscape|Macro Landscape – AI Infrastructure & Agent Platforms (Nov 2025)}}).

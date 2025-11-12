@@ -1,4 +1,4 @@
-# Research Paper 4 Value & Pricing Cheat Sheet
+# Value Engine Value & Pricing Cheat Sheet
 
 ## Offer Structure
 - **Base retainer:** 36 M₽ per year (≈$0.44 M) split into four 9 M₽ tranches that map to Ignite → Foundation → Pilot Scale → Expansion.

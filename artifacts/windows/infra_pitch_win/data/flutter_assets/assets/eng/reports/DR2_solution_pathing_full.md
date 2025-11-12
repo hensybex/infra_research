@@ -1,4 +1,4 @@
-# Research Paper 2 — Full Solution Pathing & Delivery Routes
+# Launch Blueprint — Full Solution Pathing & Delivery Routes
 
 ## Executive Summary
 - A 30-item portfolio is grouped into four clusters (Operations Nerve Center, Marketplace Growth, Compliance & Trust, Ecosystem Intelligence) and sequenced across Ignite → Foundation → Pilot Scale → Expansion ({{doc:discovery_catalog_table_referenced|Discovery Catalog Reference}}, {{doc:roadmap_draft|Flagship Roadmap Draft}}).

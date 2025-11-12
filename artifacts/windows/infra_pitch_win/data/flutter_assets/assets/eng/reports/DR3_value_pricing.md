@@ -1,4 +1,4 @@
-# Research Paper 4 Value, Pricing & ROI Model
+# Value Engine — Value, Pricing & ROI Model
 
 ## 1. Executive Summary
 - Recommend a **36M₽ annual retainer** (≈$0.44M) for the engineer + product duo, staged in four 9M₽ milestone payments, plus outcome-aligned success fees that add ~8.6M₽ in the expected case.[art:20251105T151851Z-note-pricing-strategy]
